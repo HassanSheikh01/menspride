@@ -1,0 +1,132 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: "poppins", sans-serif;
+	box-sizing: border-box; 
+
+}
+.header{
+	height: 110vh;
+	width: 100%;
+	padding: 0 8%; 
+	position: relative;
+
+
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+
+
+}
+.logo{
+	width: 120px;
+}
+.navlinks{
+	padding:28px 0;
+}
+.navlinks li{
+	display: inline-block;
+	margin: 0 15px;
+}
+.navlinks li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 0;
+	position: relative;
+}
+.navlinks li a::after{
+	content: '';
+	background: #393939;
+	width: 0;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: width 0.5s;
+}
+.navlinks li a:hover::after{
+	width: 100%;
+}
+.crt{
+	background: #393939;
+	color: #fff;
+	padding: 10px 30px;
+	border-radius: 3px;
+	cursor: pointer;
+
+}
+.Content{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 90%;
+	max-width: 900px;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #fff; 
+	margin-top: 50px;
+}
+.Content h1{
+	font-size:65px;
+	font-weight: 600;
+	margin-bottom:40px;
+}
+.Content form{
+	background:#fff;
+	padding: 10px;
+	border-radius: 8px;
+	display: flex;
+}
+.Content form input{
+	flex: 1;
+	border: none;
+	outline: none;
+	padding: 0 20px;
+	font-size: 18;
+}
+.Content form button{
+ 	background:#393939;
+ 	color: #fff;
+ 	padding: 15px 40px;
+ 	border: none;
+ 	border-radius: 6px;
+ 	cursor: pointer;
+}
+.categorylist{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 35px;
+}
+.category{
+	width:280px;
+	height: 290px;
+	margin:0 10px;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.category img{
+	width: 280px;
+	height:270px; 
+	margin-bottom: 5px;
+}
+.backvideo{
+
+	position: absolute;
+	right: 0px;
+	bottom:0px;
+	min-height: 100%;
+	min-width: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+}
+
+#styling{
+font-size: 15px;
+}
+
